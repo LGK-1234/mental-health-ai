@@ -1,0 +1,140 @@
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  /* font-size:100%; */
+  vertical-align: baseline;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
+body {
+  height: 100vh;
+  background-color: #f1f4f6;
+}
+
+#app {
+  height: 100%;
+}
+
+.el-header {
+  height: 50px !important;
+  padding: 0 !important;
+  box-shadow: 0px 1px 1px rgba(0,0,0,0.05);
+  border-bottom: 1px solid transparent;
+}
+
+.pagination-info {
+  padding: 10px 0;
+  background-color: #fff;
+  .el-pagination {
+    justify-content: end;
+  }
+}
+
+/* 后台确认框：档案资料页风格（MessageBox 会挂载到 body，需使用全局样式） */
+.el-message-box.archive-message-box {
+  width: min(440px, calc(100vw - 32px));
+  padding: 0;
+  overflow: hidden;
+  color: #352e29;
+  border: 2px solid #352e29;
+  border-radius: 4px 9px 6px 10px;
+  background-color: #fffaf0;
+  background-image:
+    linear-gradient(rgba(143, 61, 50, 0.025) 1px, transparent 1px),
+    radial-gradient(rgba(53, 46, 41, 0.06) 0.55px, transparent 0.55px);
+  background-size: 100% 29px, 6px 6px;
+  box-shadow: 9px 10px 0 rgba(53, 46, 41, 0.2);
+  user-select: none;
+}
+
+.archive-message-box .el-message-box__header {
+  margin: 0 18px;
+  padding: 19px 0 13px;
+  border-bottom: 1px dashed rgba(53, 46, 41, 0.46);
+}
+
+.archive-message-box .el-message-box__title {
+  color: #352e29;
+  font-family: 'Noto Serif SC', 'Songti SC', SimSun, serif;
+  font-size: 19px;
+  font-weight: 800;
+}
+
+.archive-message-box .el-message-box__headerbtn {
+  top: 16px;
+  right: 18px;
+}
+
+.archive-message-box .el-message-box__headerbtn .el-message-box__close {
+  color: #74675d;
+}
+
+.archive-message-box .el-message-box__content {
+  padding: 20px 18px 18px;
+  color: #51483f;
+  font-size: 13px;
+  line-height: 1.7;
+}
+
+.archive-message-box .el-message-box__status {
+  color: #8f7b56;
+}
+
+.archive-message-box .el-message-box__btns {
+  padding: 13px 18px 18px;
+  border-top: 1px dashed rgba(53, 46, 41, 0.32);
+  background: rgba(239, 227, 204, 0.34);
+}
+
+.archive-message-box .el-button {
+  min-width: 78px;
+  border-radius: 2px 5px 3px 6px;
+  border-color: rgba(53, 46, 41, 0.55);
+  color: #51483f;
+  background: #fffaf0;
+  font-weight: 800;
+}
+
+.archive-message-box .el-button--primary {
+  color: #fffaf0;
+  border-color: #352e29;
+  background: #8f3d32;
+  box-shadow: 2px 2px 0 #352e29;
+}
+
+.archive-message-box .el-button--primary:hover,
+.archive-message-box .el-button--primary:focus {
+  color: #fffaf0;
+  border-color: #352e29;
+  background: #773027;
+}
+
+.archive-message-box .archive-delete-confirm,
+.archive-message-box .archive-delete-confirm:hover,
+.archive-message-box .archive-delete-confirm:focus {
+  color: #fffaf0;
+  border-color: #514634;
+  background: #8f7b56;
+  box-shadow: 2px 2px 0 #514634;
+}

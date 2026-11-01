@@ -1,0 +1,23 @@
+# 依赖与构建产物
+node_modules/
+dist/
+target/
+.vite/
+uploads/
+logs/
+*.log
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# 系统与临时
+.DS_Store
+Thumbs.db
+*.tmp
